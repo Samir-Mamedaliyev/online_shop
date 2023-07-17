@@ -1,0 +1,1 @@
+SELECT * FROM internet_store.product;
