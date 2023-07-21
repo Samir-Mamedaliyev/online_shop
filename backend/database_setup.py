@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 import sys
 from sqlalchemy import URL
 
@@ -23,6 +24,7 @@ engine = create_engine(url_object)
 Base.metadata.create_all(engine)
 
 
+@dataclass
 class Product(Base):
     __tablename__ = 'product'
     id = Column(Integer, primary_key=True)
